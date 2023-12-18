@@ -1,0 +1,6 @@
+build:
+  localstack: .
+
+deploy:
+  ## Pass ${OKTETO_BUILD_LOCALSTACK_IMAGE} to localstack.yml
+  - kubectl apply -f localstack.yml
